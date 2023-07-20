@@ -1,7 +1,12 @@
 .table-container {
-    overflow-x: auto;
-    width: 60%; /* Definindo a largura da tabela para 60% */
-    margin: 0 auto; /* Centralizando a tabela na tela */
+  width: 60%;
+  overflow-x: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 20px;
   }
   
   .responsive-table {
@@ -44,7 +49,7 @@
     list-style: none;
     padding: 0;
     margin-top: 20px;
-    margin-bottom: 40px; /* Adicionando um espaço abaixo da tabela para a paginação */
+    margin-bottom: 40px;
   }
   
   .pagination li {
@@ -64,4 +69,39 @@
     color: #fff;
     border: 1px solid #007bff;
   }
+
+  .input-container {
+    display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  }
   
+  .input-container label {
+    margin-bottom: 5px;
+  }
+  
+  .input-container input {
+    width: 100%;
+  }
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .search-container button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color: #0056b3;
+  }
+
+  .button{
+    margin-right: 4px;
+  }
